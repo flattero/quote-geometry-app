@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Geometry</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Load Three.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.min.js"></script>
+  <!-- Load CSS2DRenderer for labels -->
+  <script type="module" defer src="https://cdn.jsdelivr.net/npm/three@0.156.1/examples/jsm/renderers/CSS2DRenderer.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Quote Geometry</h1>
+    <p>Enter one or two famous quotes and visualize their emotional geometry.</p>
+    <div class="inputs">
+      <textarea id="quote1" placeholder="Enter quote 1..." rows="3"></textarea>
+      <textarea id="quote2" placeholder="Enter quote 2 (optional)..." rows="3"></textarea>
+    </div>
+    <button id="generateBtn">Generate Geometry</button>
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="error hidden"></div>
+    <div id="visualization" class="visualization"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
