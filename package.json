@@ -1,0 +1,15 @@
+{
+  "name": "quote-geometry-app",
+  "version": "1.0.0",
+  "description": "A simple AI-powered app that analyzes quotes and visualizes them in 3D using Three.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "openai": "^4.24.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  }
+}
